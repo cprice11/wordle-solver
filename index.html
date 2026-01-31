@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-left">
+      <div class="home" style="color: orange">Under Development</div>
+    </div>
+    <div class="header-right">
+      <div class="settings"></div>
+    </div>
+  </header>
+  <main class="App-module-game" id="wordle-app-game" style="max-height: calc(100% - 210px - var(--header-height));">
+    <div class="board">
+      <div class="cell-row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="cell-row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="cell-row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="cell-row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="cell-row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="cell-row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+    <div class="keyboard">
+      <div class="keyboard-row">
+        <button type="button" data-key="q" class="keyboard-key">q</button>
+        <button type="button" data-key="w" class="keyboard-key">w</button>
+        <button type="button" data-key="e" class="keyboard-key">e</button>
+        <button type="button" data-key="r" class="keyboard-key">r</button>
+        <button type="button" data-key="t" class="keyboard-key">t</button>
+        <button type="button" data-key="y" class="keyboard-key">y</button>
+        <button type="button" data-key="u" class="keyboard-key">u</button>
+        <button type="button" data-key="i" class="keyboard-key">i</button>
+        <button type="button" data-key="o" class="keyboard-key">o</button>
+        <button type="button" data-key="p" class="keyboard-key">p</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" data-key="a" class="keyboard-key">a</button>
+        <button type="button" data-key="s" class="keyboard-key">s</button>
+        <button type="button" data-key="d" class="keyboard-key">d</button>
+        <button type="button" data-key="f" class="keyboard-key">f</button>
+        <button type="button" data-key="g" class="keyboard-key">g</button>
+        <button type="button" data-key="h" class="keyboard-key">h</button>
+        <button type="button" data-key="j" class="keyboard-key">j</button>
+        <button type="button" data-key="k" class="keyboard-key">k</button>
+        <button type="button" data-key="l" class="keyboard-key">l</button>
+      </div>
+      <div class="keyboard-row">
+        <button type="button" data-key="enter" class="keyboard-key large-key">enter</button>
+        <button type="button" data-key="z" class="keyboard-key">z</button>
+        <button type="button" data-key="x" class="keyboard-key">x</button>
+        <button type="button" data-key="c" class="keyboard-key">c</button>
+        <button type="button" data-key="v" class="keyboard-key">v</button>
+        <button type="button" data-key="b" class="keyboard-key">b</button>
+        <button type="button" data-key="n" class="keyboard-key">n</button>
+        <button type="button" data-key="m" class="keyboard-key">m</button>
+        <button type="button" data-key="backspace" class="keyboard-key large-key">
+          <svg height="20" viewBox="0 0 24 24" width="20" class="game-icon" data-testid="icon-backspace">
+            <path fill="var(--color-tone-1)"
+              d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z">
+            </path>
+          </svg></button>
+      </div>
+    </div>
+  </main>
+  <footer class="Footer-module-container">
+    <ul class="Footer-module-legalLinks-Container">
+      <li class="Footer-module_legalLink__saQgH"><a href="https://www.nytimes.com/games/wordle">Go to today's
+          wordle</a></li>
+    </ul>
+  </footer>
+  <script type="module" src="src/main.js"></script>
+</body>
+
+</html>
