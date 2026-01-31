@@ -1,4 +1,4 @@
-import { VALID_WORDS } from "./valid-words";
+import { VALID_WORDS } from "./valid-words.js";
 const body = document.querySelector('body')
 const rows = document.querySelectorAll('.cell-row');
 const keyboard = document.querySelectorAll('.keyboard-key');
