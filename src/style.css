@@ -1,0 +1,129 @@
+:root {
+  --color-background: #121213;
+  --color-outline: #3a3a3c;
+  --color-button: #818384;
+  --color-text: #F8F8F8;
+  --color-green: #538D4E;
+  --color-yellow: #B59F3B;
+}
+
+body {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  display: block;
+}
+
+main {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.cell, .keyboard-key {
+  text-transform: uppercase;
+}
+
+.board {
+  width: 300px;
+  height: 360px;
+  display: grid;
+  grid-template-rows: 52.5px 52.5px 52.5px 52.5px 52.5px 52.5px;
+  row-gap: 5px;
+}
+
+.cell-row {
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: 52px 52px 52px 52px 52px;
+}
+
+.cell {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  border: var(--color-outline) solid 2px;
+}
+
+.cell.entry {
+  background-color: var(--color-background);
+  border-color: var(--color-button);
+}
+
+.cell.absent {
+  background-color: var(--color-outline);
+  border-color: var(--color-outline);
+}
+
+.cell.present {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
+}
+
+.cell.correct {
+  background-color: var(--color-green);
+  border-color: var(--color-green);
+}
+
+.keyboard {
+  height: 200px;
+  margin: 8px
+}
+
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto 8px;
+  width: 100%;
+}
+
+.keyboard-key {
+  background-color: var(--color-button);
+  color: var(--color-text);
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0px 6px 0px 0px;
+  width: 43px;
+  height: 58px;
+  border-width: 0;
+  border-radius: 4px;
+}
+
+.keyboard-key.absent {
+  background-color: var(--color-outline);
+}
+
+.keyboard-key.present {
+  background-color: var(--color-yellow);
+}
+
+.keyboard-key.correct {
+  background-color: var(--color-green);
+}
+
+.keyboard-key.large-key {
+  flex: 1.5;
+  font-size: 12px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
